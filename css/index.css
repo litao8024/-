@@ -63,7 +63,38 @@ body {
 	transition-duration: 0ms !important;
 	-webkit-transition-duration: 0ms !important;
 }
-
+.page0 {
+ 	background: #000; 
+}
+#c {
+	display: block;
+	margin:0 auto;
+}
+.txt{
+	color: white;
+	font-size: 28px !important;
+	position: absolute;
+    bottom: 100px;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+}
+.txt span{
+	text-decoration:blink;
+    animation:fade 1000ms infinite;
+    -webkit-animation:fade 1000ms infinite;
+}
+@keyframes fade {  
+    from { opacity: 1.0; }  
+    50% { opacity: 0.4; }  
+    to { opacity: 1.0; }  
+}  
+   
+@-webkit-keyframes fade {  
+    from { opacity: 1.0; }  
+    50% { opacity: 0.4; }  
+    to { opacity: 1.0; }  
+}  
 .page1 {
 	background: #37c1e3;
 }
