@@ -216,26 +216,38 @@ autoPlay = function(to) {
 	} else if(to == 6){
 		$('.contain5').find('.img1').delay(500).animate({
 			left: '0',
-		}, 1000,);
-//		$('.contain5').find('.page5-top').animate({
-//			left:'-120%'
-//		},5000,)
+		}, 1000);
+		$('.contain5').find('.page5-top').animate({
+			left:'-110%'
+		},15000);
+		$('.contain5').find('.page5-middle').animate({
+			left:'-95%'
+		},15000);
+		$('.contain5').find('.page5-bottom').animate({
+			left:'-110%'
+		},15000)
 //		var page5Time = setInterval(function(){
-//			document.getElementsByClassName('page5-top')[0].setAttribute('style','position: relative;top: 110px;width: 300%;margin-left: 150px;left: 0%;');
+//			document.getElementsByClassName('page5-top')[0].style.left = '0';
 //			$('.contain5').find('.page5-top').animate({
 //				left:'-120%'
-//			},4800,)
-//		},4900)
+//			},10000,)
+//		},10000)
 		interval = setTimeout(function() {
 //			clearInterval(page5Time);
 			runPage.go(to);
-			$('.contain5').find('.img1').delay(500).animate({
+			$('.contain5').find('.img1').delay(2000).animate({
 				left: '-120%'
 			}, 1000,);
-			$('.contain5').find('.page5-top').animate({
+			$('.contain5').find('.page5-top').delay(2000).animate({
+				left:'0%'
+			},1000,);
+			$('.contain5').find('.page5-middle').delay(2000).animate({
+				left:'0%'
+			},1000,);
+			$('.contain5').find('.page5-bottom').delay(2000).animate({
 				left:'0%'
 			},1000,)
-		}, 10000);
+		}, 20000);
 	}else if(to == 7){
 		$('.contain6').find('.img1').delay(500).animate({
 			left: '0',
