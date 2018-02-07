@@ -6,23 +6,19 @@
 		<link rel="stylesheet" href="css/jquery.fullPage.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="css/page6.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
 		<div id="pageContain">
-			<div class="page page0">
-				<div class="contain">
-					<canvas id="c"></canvas>
-					<p class="txt">正在加载中...<span>.</span></p>
-				</div>
-			</div>
 			<div class="page page1">
 				<!--第一屏-->
 				<div class="contain contain1">
 					<canvas id="canvas" width="" height=""></canvas>
+					<p class="txt">正在加载中...<span>.</span></p>
 					<img class="img1" src="images/login.png"/>
 					<img src="images/beijintubiao.png" class="img3"/>
-					<div class="img2"></div>
+					<!--<div class="img2"></div>-->
 						<div class="first">
 							<div class="first-top">
 								<div class="first-left">
@@ -39,44 +35,72 @@
 						</div>
 				</div> 
 			</div>
+			<div class="page page9">
+				<!--插入的一屏-->
+				<div class="contain contain9">
+					<img class="img1" src="images/login.png"/>
+					<!--<div class="title">资 源 整 合 平 台</div>-->
+					<div class="page9-1">.................</div>
+					<div class="page9-2">.................</div>
+					<div class="page9-3">.................</div>
+					<div class="page9-4">.................</div>
+					<div class="page9-5">...........................................................</div>
+					<div class="page9Engineer">
+						<div>
+							工程师<br />资源池
+						</div>
+					</div>
+					<div class="page9Spare">
+						<div>
+							备件<br />资源池
+						</div>
+					</div>
+					<div class="page9Middle">
+					</div>
+					<div class="page9Middle1">
+						IT服务资<br />源整合平台
+					</div>
+					<div class="page9Service">
+						<div>
+							服务管理<br />工具资源池
+						</div>
+					</div>
+					<div class="page9Manufacturer">
+						<div>
+							厂商合<br />作资源池
+						</div>
+					</div><div class="page9Right">
+						<div>
+							10000+<br />服务合作伙伴
+						</div>
+					</div>
+					<div class="page9bottom">
+						<div style="background:rgba(35,167,209,0.3);">产品</div>
+						<div style="background:rgba(35,167,209,0.5);">平台</div>
+						<div style="background:rgba(35,167,209,0.7);">模式</div>
+						<div style="background:rgba(35,167,209,1);">生态</div>
+					</div>
+				</div> 
+			</div>
 			<div class="page page2">
 				<!--第二屏-->
 				<div class="contain contain2">
+					<!--第二页背景-->
+					<canvas id="page2Canvas" width="" height=""></canvas>
 					<img class="img1" src="images/login.png"/>
-					<!--<img class="page23" src="images/bg2-3.png"/>
-					<img class="page21" src="images/bg2-1.png"/>
-					<img class="page22" src="images/bg2-2.png"/>
-					<img class="page20" src="images/bg2-0.png"/>
-					<div class="beijian">
-						备件商城
-					</div>
-					<div class="page2-div">
-						<div class="Page2-top">
-							“备件即服务”
-						</div>
-						<div class="Page2-bottom">
-							整合备件供应商合作伙伴资源
-						</div>
-					</div>
-					<div class="hiddle">
-						<div class="hiddle-top">
-							“备件即服务”
-						</div>
-						<div class="hiddle-bottom">
-							整合备件供应商合作伙伴资源
-						</div>
-					</div>-->
 					<div class="Page2ImgLeft">
 						<img src="images/page2imgleft.png"/>
 					</div>
 					<div class="Page2ImgRight">
 						<div class="Page2Img-top">
 							<span>备件商城</span>
-							<div>提供高性价比的“备件即服务”和标准化的技术支持服务，整合备件商合作伙伴的备件资源。</div>
+							<div>提供高性价比的“备件即服务”和标准化的技 术支持服务，全面提升合作伙伴的技术服务能 力及SLA的响应能力。</div>
 						</div>
-						<div class="Page2Img-bottom">
-							<img src="images/page2imgright.png"/>
-						</div>
+						<!--<div class="Page2Img-bottom">
+							<img class="donut donut-front" src="images/page2imgright.png" alt="Donut front" />
+		    				<img class="donut donut-back" src="images/page2imgright.png" alt="Donut back" />
+						</div>-->
+						<img class="Page2Img-bottom" src="images/page2imgright.png"/>
 					</div>
 				</div>
 			</div>
@@ -86,14 +110,22 @@
 					<img class="img1" src="images/login.png"/>
 					<div class="page3-left">
 						<div class="page3-content">
-							<p>工程师资源</p>
+							<div>
+								<p>工程</p>
+								<p>师资源</p>
+							</div>
 							<div id="page2TxtShow">
-							
+								伟仕佳杰服务拥有覆盖全球范围的服务实施团队，整合自有工程师资源200+以及合作伙伴工程师资源2000+，可快速为各类客户提供包括网络、存储、虚拟化、数据库及中间件等各专业的服务响应。
 							</div>
 						</div>
 					</div>
-					<div id="page2Txt">
-						佳杰服务整合合作伙伴工程师资源， 拥有覆盖全国范围的服务实施团队， 可快速为各类客户提供专业的服务响应。
+					<div class="page3-Right" style="background:#1B1B1B;">
+						<div id="mainMap" style="height:600px;width: 800px;padding:5px;position: absolute;top:50%;margin-top: -300px;">
+							
+						</div>
+						<div class="mapname0">高级工程师</div>
+						<div class="mapname1">高级工程师</div>
+						<div class="mapname2">高级工程师</div>
 					</div>
 				</div>
 			</div>
@@ -111,8 +143,9 @@
 						<img class="left6 imgLeft" src="images/page4-2.png"/>
 						<img class="left7 imgLeft" src="images/page4-3.png"/>
 					</div>
+					<img class="page4Img" src="images/page40.png" style="position: absolute; display: block; left: 0%;"/>
 					<div class="page4-right">
-						<img class="right0 img" src="images/page40.png"/>
+						<img class="right0 img" src="images/page40.png" style="position: absolute; display: block; left: 0%;"/>
 						<img class="right1 img" src="images/page41.png"/>
 						<img class="right2 img" src="images/page42.png"/>
 						<img class="right3 img" src="images/page43.png"/>
@@ -141,7 +174,7 @@
 							
 							<div class="p p2">伟仕佳杰交付管理系统 </div>
 							<div class="page4-content page4-content2">
-								还有没内容
+								提高对工程师项目执行流程管控的能力、以及合作伙伴管控项目的能力；促使伟仕佳杰服务对工程师资源的有效整合。
 							</div>
 							
 							<div class="p p3">IT综合管理系统 </div>
@@ -155,85 +188,177 @@
 			</div>
 			<div class="page page5">
 				<!--第五屏-->
+				<img class="img1" src="images/login.png"/>
 				<div class="contain contain5">
-					<img class="img1" src="images/login.png"/>
-					<div class="page5-top">
-						<div class="page5-img">
-							<img src="images/huawei.png"/>
-							<div>五钻认证服务商-企业网络 （数通&安全）服务合作伙伴</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/veritas.png"/>
-							<div>VERITAS服务提供商</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/zigong.png"/>
-							<div>紫光华山金牌服务中心（北京）</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/emc.png"/>
-							<div>EMC服务提供商</div>
-						</div>
-					</div>
-					<div class="page5-middle">
-						<div class="page5-img">
-							<img src="images/shutonganquan.png"/>
-							<div>认证服务解决方案伙 伴-认证级（云方向）</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/hds.png"/>
-							<div>HDS独立服务提供商</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/dell.png"/>
-							<div>戴尔自助派遣服务提供商</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/cisco.png"/>
-							<div>浪潮思科授权服务商</div>
-						</div>
-					</div>
-					<div class="page5-bottom">
-						<div class="page5-img">
-							<img src="images/wuzuanrenzheng.png"/>
-							<div>五钻认证服务商-IT服务合作伙伴</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/ruijie.png"/>
-							<div>锐捷授权服务中心</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/nsfocus.png"/>
-							<div>绿盟授权服务中心</div>
-						</div>
-						<div class="page5-img">
-							<img src="images/h3c.png"/>
-							<div>主网络四星服务商</div>
-						</div>
+					<div class="contain5MilddleImg">
+						<img class="Page5Img0" src="images/Page5Img0.png" alt="" />
+						<img class="Page5Img1" src="images/Page5Img1.png" alt="" />
+						<img class="Page5Img2" src="images/Page5Img2.png" alt="" />
+						<img class="Page5Img3" src="images/Page5Img3.png" alt="" />
+						<img class="Page5Img4" src="images/Page5Img4.png" alt="" />
+						<img class="Page5Img5" src="images/Page5Img5.png" alt="" />
+						<img class="Page5Img6" src="images/Page5Img6.png" alt="" />
+						<img class="Page5Img7" src="images/Page5Img7.png" alt="" />
+						<img class="Page5Img8" src="images/Page5Img8.png" alt="" />
+						<img class="Page5Img9" src="images/Page5Img9.png" alt="" />
+						<img class="Page5Img10" src="images/Page5Img10.png" alt="" />
+						<img class="Page5Img11" src="images/Page5Img11.png" alt="" />
+						<img class="Page5Img12" src="images/Page5Img12.png" alt="" />
+						<img class="Page5Img13" src="images/Page5Img13.png" alt="" />
+						<img class="Page5Img14" src="images/Page5Img14.png" alt="" />
+						<img class="Page5Img15" src="images/Page5Img15.png" alt="" />
+						<img class="Page5Img16" src="images/Page5Img16.png" alt="" />
+						<img class="Page5Img17" src="images/Page5Img17.png" alt="" />
+						<img class="Page5Img18" src="images/Page5Img18.png" alt="" />
+						<img class="Page5Img19" src="images/Page5Img19.png" alt="" />
+						<img class="Page5Img20" src="images/Page5Img20.png" alt="" />
+						<img class="Page5Img21" src="images/Page5Img21.png" alt="" />
+						<img class="Page5Img22" src="images/Page5Img22.png" alt="" />
+						<img class="Page5Img23" src="images/Page5Img23.png" alt="" />
+						<img class="Page5Img24" src="images/Page5Img24.png" alt="" />
+						<img class="Page5Img25" src="images/Page5Img25.png" alt="" />
+						<img class="Page5Img26" src="images/Page5Img26.png" alt="" />
+						<img class="Page5Img27" src="images/Page5Img27.png" alt="" />
 					</div>
 				</div>
 			</div>
 			<div class="page page6">
 				<!--第六屏-->
-				<div class="contain contain6">
-					<img class="img1" src="images/login.png"/>
-					<div class="wrap" id="wrap">
-						<div class="slide" id="slide">
-					       <ul>
-					           <li style="width: 100px;height: 400px; top: 70px; left: 0px; opacity: 0.8; z-index: 3;"><a href="#"><img src="images/ITSSquanwei.jpg" alt=""></a></li>
-					           <li style="width: 400px;height: 400px; top: 100px; left: 200px; opacity: 1; z-index: 4;"><a href="#"><img src="images/yunfangxing.png" alt=""></a></li>
-					           <li style="width: 200px;height: 400px; top: 70px; left: 600px; opacity: 0.8; z-index: 3;"><a href="#"><img src="images/Registered.jpg" alt=""></a></li>
-					           <li style="width: 100px;height: 400px; top: 20px; left: 750px; opacity: 0.2; z-index: 2;"><a href="#"><img src="images/H3c.jpg" alt=""></a></li>
-					           <li style="width: 200px;height: 400px; top: 20px; left: 50px; opacity: 0.2; z-index: 2;"><a href="#"><img src="images/gaoxin.jpg" alt=""></a></li>
-					       </ul>
-					   </div>
-					   <div class="page6bottom">
-					   		<span class="span span0">ITSS认证0</span>
-					   		<span class="span span1">ITSS认证1</span>
-					   		<span class="span span2">ITSS认证2</span>
-					   		<span class="span span3">ITSS认证3</span>
-					   		<span class="span span4">ITSS认证4</span>
-					   </div>
+					<div class="page6canvas">
+						<div id="particles-js"></div>
+					</div>
+				<div class="contain contain6" style="position: absolute;top: 0;">
+					<!--背景动画-->
+					<div class="page6Left">
+						<div class="page6Content">
+							<div class="page6Title">
+								<div class="page6TitleLeft">
+									灾 备
+									<img src="images/page6img.png"/>
+									<span class="page6TitleRight">解 决 方 案</span>
+								</div>
+							</div>
+							<div class="page6LeftContent">
+								<span>应用级双活灾备中心规划咨询项目</span>
+								<div>
+									内容：专业的实施团队，项目经验丰富，对业务连续性和灾备有深入的理解;<br />
+									有丰富的厂商技术资源及综合技术支持能力；<br />
+									有灾备管理软件产品，使客户有更好的运维管理好灾备系统现状调研及分析，网络及基础架构风险评估，支持业务影响分析，两地三中心详细设计和支持，POC测试和搬迁实施支持，支持两地三中心运维体系建设等。
+								</div>
+							</div>
+							<div class="page6Left1">
+								<div class="ProgressBar0"></div>
+								<div class="ProgressBar0 ProgressBar1"></div>
+							</div>
+							<!--<img class="page6Left1" src="images/page6Left1.png"/>-->
+						</div>
+					</div>
+					<div class="page6Middle">
+						<div class="page6Content">
+							<div class="page6Title">
+								<div class="page6TitleLeft">
+									网 络
+									<img src="images/page6img.png"/>
+									<span class="page6TitleRight">优 化 服 务</span>
+								</div>
+							</div>
+							<div class="page6MiddleContent">
+								<div class="page6MiddleContentTitle">
+									<div></div>
+									<span>高可靠需求</span>
+								</div>
+								<div class="page6MiddleC">
+									对网络环境的可靠性和可用性要求较高，网络服务的中止将给业务运行带来损失或恶劣影响。
+								</div>
+								<div class="page6MiddleContentTitle">
+									<div></div>
+									<span>标准化需求</span>
+								</div>
+								<div class="page6MiddleC">
+									现网设备配置混乱，冗余配置增多。要求网络配置需符合国家标准及行业标准。
+								</div>
+								<div class="page6MiddleContentTitle">
+									<div></div>
+									<span>结构优化需求</span>
+								</div>
+								<div class="page6MiddleC">
+									历史原因，现网在设计上存在层次结构混乱、单点故障风险点多、设备多级级联严重问题。
+								</div>
+								<div class="page6MiddleContentTitle">
+									<div></div>
+									<span>运维优化需求</span>
+								</div>
+								<div class="page6MiddleC">
+									运维层面、制度不完善、运维手册不完整、设备及资源描述不规范、网络拓补信息更新不及时等。
+								</div>
+								<div class="page6MiddleContentTitle">
+									<div></div>
+									<span>应急响应需求</span>
+								</div>
+								<div class="page6MiddleC">
+									设备部署分散，设备持续运行多年，设备老化、线路老化严重，有难以预估的风险。
+								</div>
+							</div>
+							<div class="page6Middle1">
+								<div class="chilun1">
+									<div></div>
+								</div>
+								<div class="chilun2">
+									<div></div>
+								</div>
+								<div class="chilun3">
+									<div></div>
+								</div>
+							</div>
+							<!--<img class="page6Middle1" src="images/page6Middle1.png"/>-->
+						</div>
+					</div>
+					<div class="page6Right">
+						<div class="page6Content">
+							<div class="page6Title">
+								<div class="page6TitleLeft">
+									<span style="position: absolute;width: 80px;left: 0;line-height: 31px;">无线<br />网络</span>
+									<img src="images/page6img.png"/>
+									<span class="page6TitleRight">实 施 服 务</span>
+								</div>
+							</div>
+							<div class="page6RightContentTitle">
+								<div style="background: url(images/page6-1.png) no-repeat;background-size: 100% 100%;"></div>
+								<span>方案设计</span>
+							</div>
+							<div class="page6RightC">
+								用户现场勘测、网络资源规划、AP部署设计、总体方案评审。
+							</div>
+							<div class="page6RightContentTitle">
+								<div style="background: url(images/page6-2.png) no-repeat;background-size: 100% 100%;"></div>
+								<span>工程安装</span>
+							</div>
+							<div class="page6RightC">
+								设备上架上线、AP安装部署、软件调测、全线连调、业务调测。
+							</div>
+							<div class="page6RightContentTitle">
+								<div style="background: url(images/page6-3.png) no-repeat;background-size: 100% 100%;"></div>
+								<span>持续优化</span>
+							</div>
+							<div class="page6RightC">
+								检查有线网络设备运行状态，测试网络健壮性，分析网络数据运行情况，给出合理性和规范性建议。
+							</div>
+							<div class="page6RightContentTitle">
+								<div style="background: url(images/page6-4.png) no-repeat;background-size: 100% 100%;"></div>
+								<span>实施保障</span>
+							</div>
+							<div class="page6RightC">
+								在工程期间现场提供人员技术支持。在验收完成后提供为用户及运维人员进行技能培训和实践指导。
+							</div>
+							<div class="page6RightContentTitle">
+								<div style="background: url(images/page6-5.png) no-repeat;background-size: 100% 100%;"></div>
+								<span>工程验收</span>
+							</div>
+							<div class="page6RightC">
+								在工程期间现场提供人员技术支持。在验收完成后提供为用户及运维人员进行技能培训和实践指导。
+							</div>
+							<img class="page6Right1" src="images/page6Right1.gif"/>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -241,28 +366,153 @@
 				<!--第七屏-->
 				<div class="contain contain7">
 					<img class="img1" src="images/login.png"/>
-					 
+					<div id="WebGL-output"></div>
+					<div class="page7Title">技术解决方案</div>
+					<div class="page7TopLeft">
+						<img src="images/page7-1.png"/>
+						<div class="page7First">
+							<span>移动应用</span>
+							<div>
+								成熟的中间技术,降低90%的开发难度, 丰富的SDK、IDE、终端模拟器等配套辅助开发工具，无需原生开发技术会Html、js、css就可以开发。
+							</div>
+						</div>
+					</div>
+					<div class="page7TopRight">
+						<img src="images/page7-2.png"/>
+						<div class="page7First">
+							<span>办公系统</span>
+							<div>
+								为政府机关、 事业单位、 大中型企业量身定制PC/IOS/Android Windows Phone全支持公文<br />审批推送，更及时，更精准符合办公习惯，用户<br />体验绝佳。
+							</div>
+						</div>
+					</div>
+					<div class="page7BottomLeft">
+						<img src="images/page7-3.png"/>
+						<div class="page7First">
+							<span>移动办公</span>
+							<div>
+								中小企业老板管理外勤员工的最佳选择我公司自<br />主研发专利定位技术xLoc，有效结合了多种定位<br />技术，结合特有的Android系统嵌入和路径优化<br />算法，给企业老板提供最精准的定位服务。
+							</div>
+						</div>
+					</div>
+					<div class="page7BottomMiddle">
+						<img src="images/page7-4.png"/>
+						<div class="page7First">
+							<span>远程控制系统</span>
+							<div>
+							“基于移动通信与物联网技术的远程检测系统”可实时采集、处理和感知站点设备和站点环境的各种数据，提供远程监控和感知的技术手段并作为管理、维护人员与站点设备的人机界面。
+							</div>
+						</div>
+					</div>
+					<div class="page7BottomRight">
+						<img src="images/page7-5.png"/>
+						<div class="page7First">
+							<span>智慧行政服务</span>
+							<div>
+								利用物联网、移动互联网技术，为员工提供行政<br />服务，提高员工满意度，主要包括一卡通、员工<br />食堂、智能停车、员工家园。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page page8">
+				<!--第八屏-->
+				<div class="contain contain8">
+					<img class="img1" src="images/login.png"/>
+					<canvas id="canvash" width="100" height="100"></canvas>
+					<div class="container">
+					<div id="carousel">
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+					</div>
 				</div>
 			</div>
 		</div>
 		<ul id="navBar">
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>6</li>
-			<li>7</li>
-			<li>8</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
 		</ul>
+		<!--<video width="800" height="" autoplay="autoplay" loop="loop">
+			<source src="images/校长 - 带你去旅行.mp3" type="video/mp4"></source>
+			<source src="images/校长 - 带你去旅行.mp3" type="video/ogg"></source>
+			<source src="images/校长 - 带你去旅行.mp3" type="video/webm"></source>
+		</video>-->
 		<!--loding-->
-		<script src="js/loading.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<!--第二页-->
+		<script src="js/pixi.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page2.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/tinycolor.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--图片动画-->
+		<script src="js/Modernizr.js" type="text/javascript" charset="utf-8"></script>
+			
+		<!--地图-->
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/map.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script src="js/jquery.fullPage.js"></script>
 		<script src="js/fullpage.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/animate.js" type="text/javascript" charset="utf-8"></script>
+		<!--六页-->
+		<script src="js/particles.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page6app.js" type="text/javascript" charset="utf-8"></script>
+		<!--八页-->
+		<script src="js/three.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dat.gui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script id="vertexShader" type="x-shader/x-vertex">
+			// Uniforms
+			uniform float time;
+			varying vec3 vNormal;
+			      
+			void main(void) {
+			   vec3 v = position;
+			   vNormal = normal;
+			   v.z += cos(2.0 * position.x + (time)) * 4085.5;
+				
+			   gl_Position = projectionMatrix *
+			                modelViewMatrix *
+			                vec4(v, 1.0);
+			}
+		</script>
+		<script id="fragmentShader" type="x-shader/x-fragment">
+			varying vec3 vNormal;
+			uniform float time;
+			      
+			void main(void) {
+			    vec3 light = vec3(0.1, .9, .1);
+			
+			    light = normalize(light);
+			
+			    float dProd = max(0.2, dot(vNormal, light));
+			
+			    gl_FragColor = vec4(dProd, // R
+			                      dProd, // G
+			                      dProd, // B
+			                      1.0);  // A
+			}
+		</script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>		
-		
 	</body>
 </html>
