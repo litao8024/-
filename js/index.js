@@ -1113,7 +1113,7 @@ camera.lookAt( new THREE.Vector3(0,6000,0) );
 
 
 var scene = new THREE.Scene();
-scene.fog = new THREE.Fog( 0x23233f, 1, 300000 );
+scene.fog = new THREE.Fog(0x23233f, 1, 300000);
 
 var uniforms = 
     {
@@ -1155,11 +1155,16 @@ var uniforms =
 	var renderer = new THREE.WebGLRenderer();
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	container7.appendChild( renderer.domElement );
-	
 	render();
 	function render() {
-	    requestAnimationFrame(this.render);
+	    requestAnimationFrame(render);
+	    //前进速度
 	    camera.position.z -= 150;
+	    if (camera.position.z <=150) {
+	    	camera.position.z = 550000;
+	    }
+	    console.log(camera.position.z)
+	    //波浪速度
 	    uniforms.time.value = frame7;
 	    frame7 += .04;
    //  dateVerts();

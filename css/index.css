@@ -129,8 +129,9 @@ body {
 	background:#031229;
 }
 .page9{
-	background: url(../images/ziyuanbg.png) no-repeat;
-	background-size: 100% 100%;
+	/*background: url(../images/ziyuanbg.png) no-repeat;
+	background-size: 100% 100%;*/
+	background: black;
 }
 #navBar {
 	z-index: 3;
@@ -632,7 +633,7 @@ video{
 	width: 130px;
 	height: 130px;
 	position: absolute;
-	top: 360px;
+	top: 370px;
 	left: 13%;
 	/*left: -200%;*/
 	background: url(../images/circular.png) no-repeat;
@@ -650,7 +651,7 @@ video{
 	width: 130px;
 	height: 130px;
 	position: absolute;
-	top: 360px;
+	top: 370px;
 	left: 44%;
 	/*left: -200%;*/
 	background: url(../images/circular.png) no-repeat;
